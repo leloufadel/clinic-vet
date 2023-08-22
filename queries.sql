@@ -42,4 +42,16 @@ ROLLBACK;
 
 --To Verify that the "species" column is back to its original state
 SELECT * FROM animals; 
+--start transaction: 
+BEGIN
+-- Update animals with names ending in "mon"
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 
+-- Update animals without a species
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL OR species = ' ';
+BEGIN;
+DELETE FROM animals;
+SELECT * FROM animals;
+ROLLBACK;
+--after ROLLBACK
+SELECT * FROM animals;
