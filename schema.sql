@@ -72,6 +72,7 @@ CREATE TABLE specializations (
 CREATE TABLE visits (
   vet_id INT,
   animals_id INT,
+  visit_date DATE,
   FOREIGN KEY (vet_id) REFERENCES vets(id),
   FOREIGN KEY (animals_id) REFERENCES animals(id)
 );
