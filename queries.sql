@@ -221,7 +221,7 @@ LIMIT 1;
 -- 8. How many visits were with a vet that did not specialize in that animal's species?
 SELECT COUNT(*) AS mismatched_specialty_count
 FROM visits AS v
-JOIN animals AS a ON v.animal_id = a.id
+JOIN animals AS a ON v.animals_id = a.id
 JOIN vets AS vet ON v.vet_id = vet.id
 LEFT JOIN specializations AS s ON vet.id = s.vet_id AND a.species_id = s.species_id
 WHERE s.vet_id IS NULL;
@@ -229,16 +229,17 @@ WHERE s.vet_id IS NULL;
 --9. What specialty should Maisy Smith consider getting? Look for the species she gets the most.
 
 
-SELECT s.name AS specialty, COUNT(*) AS specialty_count
-FROM visits AS v
-JOIN animals AS a ON v.animal_id = a.id
+--9. What specialty should Maisy Smith consider getting? Look for the species she gets the most.
+
+SELECT sp.name AS specialty, COUNT(*) AS specialty_count
+FROM specializations AS v
+JOIN species AS sp ON v.species_id = sp.id
 JOIN vets AS vet ON v.vet_id = vet.id
 JOIN specializations AS s ON vet.id = s.vet_id
 WHERE vet.name = 'Vet Maisy Smith'
-GROUP BY s.name
+GROUP BY sp.name
 ORDER BY specialty_count DESC
 LIMIT 1;
-
 
 
 
