@@ -82,3 +82,4 @@ CREATE TABLE visits (
 /*Drop Not Null constraints on owners table full_name & age column*/
 ALTER TABLE owners ALTER COLUMN full_name DROP NOT NULL;
 ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+--- 

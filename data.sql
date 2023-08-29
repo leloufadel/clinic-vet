@@ -108,3 +108,8 @@ INSERT INTO visits (animal_id, vet_id, visit_date) VALUES
 
 --- let create the index: 
 CREATE INDEX idx_animal_id ON visits (animals_id);
+-----
+
+--CREATE INDEX idx_visits_id ON visits (vet_id);
+---SELECT * FROM owners where email = 'owner_18327@mail.com';
+-- CREATE INDEX idx_owner_email ON owners (email);
