@@ -113,4 +113,3 @@ INSERT INTO visits (animals_id, vet_id, visit_date) SELECT * FROM (SELECT id FRO
 
  CREATE INDEX idx_visits_id ON visits (vet_id);
 
--- CREATE INDEX idx_owner_email ON owners (email);
