@@ -91,6 +91,16 @@ To run the project, execute the following command:
 - GitHub: [Leloufadel](https://github.com/leloufadel)
 - LinkedIn: [Lala Aicha ](https://www.linkedin.com/in/lalaaicha-elvadel/)
 
+👤 **Asum Victor**
+
+- GitHub: [AsumVictor](https://github.com/AsumVictor)
+- LinkedIn: [Asum Victor](https://www.linkedin.com/in/victorasumdev/)
+
+
+👤 **Tchasinga jacques**
+- GitHub: [@Tchasinga Jack](https://github.com/tchasinga)
+- Twitter: [@tchasingajacques](https://twitter.com/TchasingaJacque)
+- LinkedIn: [@tchasingajaques](https://www.linkedin.com/in/tchasinga-jacques-76aba7214/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
