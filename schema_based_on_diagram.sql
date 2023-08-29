@@ -63,3 +63,5 @@ ALTER TABLE
     "vets" ADD CONSTRAINT "vets_id_foreign" FOREIGN KEY("id") REFERENCES "visits"("vet_id");
 ALTER TABLE
     "vets" ADD CONSTRAINT "vets_id_foreign" FOREIGN KEY("id") REFERENCES "specializations"("vet_id");
+
+    
