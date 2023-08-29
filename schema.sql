@@ -83,3 +83,10 @@ CREATE TABLE visits (
 ALTER TABLE owners ALTER COLUMN full_name DROP NOT NULL;
 ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
 --- 
+
+--- let create the index: 
+ CREATE INDEX idx_animal_id ON visits (animals_id);
+
+ CREATE INDEX idx_visits_id ON visits (vet_id);
+
+CREATE INDEX idx_owner_email ON owners (email);
